@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreeMod - Cap nhat</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", Arial, sans-serif;
+        background: #f8fafc;
+        color: #0f172a;
+      }
+      .wrap {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 28px 18px 40px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 18px;
+      }
+      .brand img {
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+      h1 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 800;
+      }
+      .meta {
+        color: #475569;
+        font-size: 13px;
+      }
+      .card {
+        background: #fff;
+        border: 1px solid #e2e8f0;
+        border-radius: 14px;
+        padding: 16px;
+        margin-top: 14px;
+      }
+      .card h2 {
+        margin: 0 0 10px;
+        font-size: 16px;
+      }
+      ul {
+        margin: 0;
+        padding-left: 18px;
+        line-height: 1.6;
+      }
+      .badge {
+        display: inline-block;
+        background: #2563eb;
+        color: #fff;
+        border-radius: 999px;
+        padding: 4px 10px;
+        font-size: 11px;
+        font-weight: 700;
+        margin-right: 8px;
+      }
+      .small {
+        color: #64748b;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <div class="brand">
+        <img src="https://raw.githubusercontent.com/your-account/your-repo/main/Logo/FreeMod.png" alt="FreeMod" />
+        <div>
+          <h1>FreeMod - Trung tam cap nhat</h1>
+          <div class="meta">Noi dung tinh de hien thi trong tab Cap nhat</div>
+        </div>
+      </div>
+
+      <section class="card">
+        <h2><span class="badge">v1.0.0</span>Phien ban hien tai</h2>
+        <ul>
+          <li>Cap nhat giao dien thuong hieu FreeMod.</li>
+          <li>Toi uu luong dieu huong giua trang Thiet bi va SHOP MMO.</li>
+          <li>Ho tro doc noi dung tinh tu file Git raw URL.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Huong dan trien khai</h2>
+        <ul>
+          <li>Chinh sua file nay va push len GitHub/GitLab.</li>
+          <li>App se tu dong nap lai theo URL da cau hinh trong bien VITE_UPDATES_STATIC_URL.</li>
+          <li class="small">Updated at: <span id="updated-at"></span></li>
+        </ul>
+      </section>
+    </main>
+    <script>
+      document.getElementById("updated-at").textContent = new Date().toLocaleString("vi-VN");
+    </script>
+  </body>
+</html>
